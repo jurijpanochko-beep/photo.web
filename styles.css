@@ -1,0 +1,284 @@
+:root {
+    --green: green;
+    --grey: grey;
+}
+body {
+    background-color:  white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+  }
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9.975rem;
+
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    padding: 0rem 1rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+     transition: all 0.3s ease-in-out;
+}
+
+.nav-menu ul li a:hover {
+    color: var(--green);
+}
+
+.nav-menu ul li a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0rem;
+    background-color: var(--green);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.logo {
+    color: white;
+}
+
+.header-section {
+    height: 94vh;
+    background-color: rgb(26 26 26 0.7);
+    background-image: url(https://img.freepik.com/free-photo/view-photographer-shooting-nature_23-2151382976.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.artstudio-container {
+    color: white;
+    text-align: center;
+}
+
+.artstudio-container h1 {
+    font-size: 2.7rem;
+    font-weight: 400;
+    padding: 6rem 0 0 0;
+    margin-bottom: 3.5rem;
+}
+.artstudio-elements {
+    display: flex;
+    justify-content: center;
+    width: 90em;
+    margin: 0 auto;
+}
+.element {
+    padding: 0.4rem;
+    border-right: 1px solid var(--grey);
+}
+
+.element h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.element p {
+    font-weight: 200;
+    font-size: 0.85rem;
+    color: var(--grey);
+}
+
+.element i {
+    font-size: 3rem;
+    color: var(--green)
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-container button,.btn {
+    background-color: transparent;
+    color: var(--green);
+    padding: 0.4rem 1.3rem;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin: 4rem 0 0 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    letter-spacing: 0.125rem;
+}
+
+.button-container button:hover {
+    background-color: rgba(108, 128, 145, 0.1);
+    color: var(--green);
+    cursor: pointer;
+}
+
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.portfolio-section article {
+    text-align: center;
+    flex: 1;
+}
+
+.portfolio-section article img {
+    border-radius: 50%;
+}
+
+.portfolio-section article h3 {
+    font-size: 1.75rem;
+    color: grey;
+font-weight: normal;
+margin-bottom: 1rem;
+}
+
+.portfolio-section article p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    color: rgb(124 124 124)
+}
+
+.btn {
+    margin: 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+.footer {
+    padding: 0 10rem;
+    text-align: center;
+    background-color: var(--green);
+    }
+ 
+footer h3 {
+    padding: 6rem 0 3.5rem 0; 
+    color: white;
+    font-width: 400;
+    font-size: 1.35rem;
+}
+
+    .form {
+        max-width: 75;
+        color:white;
+        font-size: 0.9rem;
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .name-container,.textarea-container,.email-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1rem;
+      text-align: center;
+    }
+
+
+    .name-container {
+        margin-right: 2.29rem;
+    }
+input, textarea {
+    background-color: transparent;
+    border: 2px solid #8dcca9;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,textarea:focus {
+border: 2px solid #3b835c
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(101, 157, 136);
+
+}
+.textarea-container label {
+    margin: 1rem;
+}
+
+.btn-submit {
+    color: white;
+    background-color: var(--green);
+    border: 2px solid white;
+     padding: 0 1.7rem;
+     margin-bottom: 8rem;
+    }
+
+    .btn-submit:hover {
+        color: white;
+        background-color: rgb(101, 157, 136);
+        padding: 1.5rem;
+    }
+    
+
+    @media only screen and (max-width:600px) {
+        .header-section {
+            height: 100%;
+        }
+        .artstudio-elements {
+            flex-direction: column;
+        }
+        .element {
+            margin-bottom: 2rem;
+        }
+        .button-container button {
+            margin-bottom: 2rem;
+        }
+        .portfolio-section {
+            flex-direction: column;
+            padding-bottom: 1rem;
+        }
+        .btn {
+            margin: 2rem;
+        }
+        footer {
+            padding: 0 1rem;
+        }
+        .input-container {
+            flex-direction: column;
+        }
+        .name-container {
+            margin: 0;
+        }
+    }
